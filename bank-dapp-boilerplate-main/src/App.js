@@ -242,7 +242,7 @@ function App() {
       {
         isBankerOwner && (
           <section className="bank-owner-section">
-            <h2 className="text-xl border-b-2 border-indigo-500 px-10 py-4 font-bold">Bank Admin Panel</h2>
+            <h2 className="text-xl border-b-2 border-pink-500 px-10 py-4 font-bold">Bank Admin Panel</h2>
             <div className="p-10">
               <form className="form-style">
                 <input
