@@ -35,6 +35,8 @@ function App() {
   const getBankName = async () => {
     try {
       if (window.ethereum) {
+
+        //read data
         const provider = new ethers.providers.Web3Provider(window.ethereum);
         const signer = provider.getSigner();
         const bankContract = new ethers.Contract(contractAddress, contractABI, signer);
@@ -63,7 +65,7 @@ function App() {
         console.log("Setting Bank Name...");
         await txn.wait();
         console.log("Bank Name Changed", txn.hash);
-        await getBankName();
+        getBankName();
 
       } else {
         console.log("Ethereum object not found, install Metamask.");
@@ -98,7 +100,7 @@ function App() {
     }
   }
 
-  const customerBalanceHanlder = async () => {
+  const customerBalanceHandler = async () => {
     try {
       if (window.ethereum) {
         const provider = new ethers.providers.Web3Provider(window.ethereum);
@@ -118,10 +120,15 @@ function App() {
     }
   }
 
+  const handleInputChange = (event) => {
+    setInputValue(prevFormData => ({ ...prevFormData, [event.target.name]: event.target.value }));
+  }
+
   const deposityMoneyHandler = async (event) => {
     try {
       event.preventDefault();
       if (window.ethereum) {
+        //write data
         const provider = new ethers.providers.Web3Provider(window.ethereum);
         const signer = provider.getSigner();
         const bankContract = new ethers.Contract(contractAddress, contractABI, signer);
@@ -131,7 +138,7 @@ function App() {
         await txn.wait();
         console.log("Deposited money...done", txn.hash);
 
-        customerBalanceHanlder();
+        customerBalanceHandler();
 
       } else {
         console.log("Ethereum object not found, install Metamask.");
@@ -158,7 +165,7 @@ function App() {
         await txn.wait();
         console.log("Money with drew...done", txn.hash);
 
-        customerBalanceHanlder();
+        customerBalanceHandler();
 
       } else {
         console.log("Ethereum object not found, install Metamask.");
@@ -169,15 +176,11 @@ function App() {
     }
   }
 
-  const handleInputChange = (event) => {
-    setInputValue(prevFormData => ({ ...prevFormData, [event.target.name]: event.target.value }));
-  }
-
   useEffect(() => {
     checkIfWalletIsConnected();
     getBankName();
     getbankOwnerHandler();
-    customerBalanceHanlder()
+    customerBalanceHandler()
   }, [isWalletConnected])
 
   return (
