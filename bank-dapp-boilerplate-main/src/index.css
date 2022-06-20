@@ -4,30 +4,30 @@
 
 @layer components {
   .main-container {
-    @apply w-full max-w-3xl sm:mt-14 mx-auto overflow-hidden sm:rounded-xl shadow-lg bg-gray-900 border-2 border-slate-800  text-slate-300 text-lg
+    @apply w-full max-w-3xl sm:mt-14 mx-auto overflow-hidden sm:rounded-xl shadow-lg bg-pink-900 border-2 border-slate-800  text-slate-300 text-lg
   }
 
   .headline {
-    @apply text-xl p-2 text-center sm:text-left text-4xl sm:py-5 border-b-2 border-slate-800 sm:px-10  bg-gray-900 font-bold text-violet-400
+    @apply text-xl p-2 text-center sm:text-left text-4xl sm:py-5 border-b-2 border-slate-800 sm:px-10  bg-pink-900 font-bold text-violet-400
   }
   .headline-gradient {
     @apply bg-clip-text text-transparent bg-gradient-to-tr from-pink-500 to-purple-900
   }
 
   .form-style {
-    @apply flex flex-col  border rounded-lg border-gray-600
+    @apply flex flex-col  border rounded-lg border-pink-600
   }
 
   .input-style{
-    @apply px-6 py-3 text-gray-100 border-none rounded-t-lg outline-none bg-gray-800 placeholder-gray-400 focus:placeholder-transparent  focus-within:ring-pink-500 z-40
+    @apply px-6 py-3 text-pink-100 border-none rounded-t-lg outline-none bg-pink-800 placeholder-pink-400 focus:placeholder-transparent  focus-within:ring-pink-500 z-40
   }
 
   .btn-purple {
-    @apply font-bold px-4 py-3 text-sm tracking-wider text-gray-100 uppercase transition-colors duration-200 transform bg-pink-800  hover:bg-pink-700 z-30
+    @apply font-bold px-4 py-3 text-sm tracking-wider text-pink-100 uppercase transition-colors duration-200 transform bg-pink-800  hover:bg-pink-700 z-30
   }
 
   .btn-grey {
-    @apply px-4 py-3 text-sm font-medium tracking-wider text-gray-100 uppercase transition-colors duration-200 transform bg-gray-700 hover:bg-gray-600 focus:bg-gray-600 focus:outline-none
+    @apply px-4 py-3 text-sm font-medium tracking-wider text-pink-100 uppercase transition-colors duration-200 transform bg-pink-700 hover:bg-pink-600 focus:bg-pink-600 focus:outline-none
   }
 
   .btn-connect{
