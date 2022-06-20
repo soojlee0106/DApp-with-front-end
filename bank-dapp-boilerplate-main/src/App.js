@@ -185,7 +185,7 @@ function App() {
 
   return (
     <main className="main-container">
-      <h2 className="headline"><span className="headline-gradient">수정 은행</span> 💰</h2>
+      <h2 className="headline"><span className="headline-gradient">수정 은행에 오신걸 환영합니다</span> 💰</h2>
       <section className="customer-section px-10 pt-5 pb-10">
         {error && <p className="text-2xl text-red-700">{error}</p>}
         <div className="mt-5">
@@ -235,7 +235,7 @@ function App() {
         <div className="mt-5">
           {isWalletConnected && <p><span className="font-bold">당신의 지갑 주소: </span>{customerAddress}</p>}
           <button className="btn-connect" onClick={checkIfWalletIsConnected}>
-            {isWalletConnected ? "Wallet Connected 🔒" : "Connect Wallet 🔑"}
+            {isWalletConnected ? "지갑 연결됨 🔒" : "지갑 연결하기 🔑"}
           </button>
         </div>
       </section>
