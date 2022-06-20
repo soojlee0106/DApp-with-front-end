@@ -4,37 +4,37 @@
 
 @layer components {
   .main-container {
-    @apply w-full max-w-3xl sm:mt-14 mx-auto overflow-hidden sm:rounded-xl shadow-lg bg-pink-900 border-2 border-pink-800  text-pink-300 text-lg
+    @apply w-full max-w-3xl sm:mt-14 mx-auto overflow-hidden sm:rounded-xl shadow-lg bg-teal-900 border-2 border-teal-800  text-teal-300 text-lg
   }
 
   .headline {
-    @apply text-xl p-2 text-center sm:text-left text-4xl sm:py-5 border-b-2 border-pink-800 sm:px-10  bg-pink-900 font-bold text-pink-200
+    @apply text-xl p-2 text-center sm:text-left text-4xl sm:py-5 border-b-2 border-teal-800 sm:px-10  bg-teal-900 font-bold text-teal-200
   }
   .headline-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-tr from-pink-300 to-pink-500
+    @apply bg-clip-text text-transparent bg-gradient-to-tr from-teal-300 to-teal-500
   }
 
   .form-style {
-    @apply flex flex-col  border rounded-lg border-pink-600
+    @apply flex flex-col  border rounded-lg border-teal-600
   }
 
   .input-style{
-    @apply px-6 py-3 text-pink-100 border-none rounded-t-lg outline-none bg-pink-800 placeholder-pink-400 focus:placeholder-transparent  focus-within:ring-pink-500 z-40
+    @apply px-6 py-3 text-teal-100 border-none rounded-t-lg outline-none bg-teal-800 placeholder-teal-400 focus:placeholder-transparent  focus-within:ring-teal-500 z-40
   }
 
   .btn-purple {
-    @apply font-bold px-4 py-3 text-sm tracking-wider text-pink-100 uppercase transition-colors duration-200 transform bg-pink-800  hover:bg-pink-700 z-30
+    @apply font-bold px-4 py-3 text-sm tracking-wider text-teal-100 uppercase transition-colors duration-200 transform bg-teal-800  hover:bg-teal-700 z-30
   }
 
   .btn-grey {
-    @apply px-4 py-3 text-sm font-medium tracking-wider text-pink-100 uppercase transition-colors duration-200 transform bg-pink-700 hover:bg-pink-600 focus:bg-pink-600 focus:outline-none
+    @apply px-4 py-3 text-sm font-medium tracking-wider text-teal-100 uppercase transition-colors duration-200 transform bg-teal-700 hover:bg-teal-600 focus:bg-teal-600 focus:outline-none
   }
 
   .btn-connect{
-    @apply bg-pink-500 px-5 py-3 mt-5 rounded-lg text-pink-100 font-bold
+    @apply bg-teal-500 px-5 py-3 mt-5 rounded-lg text-teal-100 font-bold
   }
 
   .bank-owner-section{
-    @apply bg-pink-900 bg-opacity-60 text-white w-4/5 mx-auto border-2 rounded-xl border-pink-500 mb-10
+    @apply bg-teal-900 bg-opacity-60 text-white w-4/5 mx-auto border-2 rounded-xl border-teal-500 mb-10
   }
 }
