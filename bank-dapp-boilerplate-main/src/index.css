@@ -11,7 +11,7 @@
     @apply text-xl p-2 text-center sm:text-left text-4xl sm:py-5 border-b-2 border-slate-800 sm:px-10  bg-gray-900 font-bold text-violet-400
   }
   .headline-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-tr from-indigo-500 to-purple-900
+    @apply bg-clip-text text-transparent bg-gradient-to-tr from-pink-500 to-purple-900
   }
 
   .form-style {
@@ -19,11 +19,11 @@
   }
 
   .input-style{
-    @apply px-6 py-3 text-gray-100 border-none rounded-t-lg outline-none bg-gray-800 placeholder-gray-400 focus:placeholder-transparent  focus-within:ring-indigo-500 z-40
+    @apply px-6 py-3 text-gray-100 border-none rounded-t-lg outline-none bg-gray-800 placeholder-gray-400 focus:placeholder-transparent  focus-within:ring-pink-500 z-40
   }
 
   .btn-purple {
-    @apply font-bold px-4 py-3 text-sm tracking-wider text-gray-100 uppercase transition-colors duration-200 transform bg-indigo-800  hover:bg-indigo-700 z-30
+    @apply font-bold px-4 py-3 text-sm tracking-wider text-gray-100 uppercase transition-colors duration-200 transform bg-pink-800  hover:bg-pink-700 z-30
   }
 
   .btn-grey {
@@ -31,10 +31,10 @@
   }
 
   .btn-connect{
-    @apply bg-indigo-500 px-5 py-3 mt-5 rounded-lg text-slate-100 font-bold
+    @apply bg-pink-500 px-5 py-3 mt-5 rounded-lg text-slate-100 font-bold
   }
 
   .bank-owner-section{
-    @apply bg-indigo-900 bg-opacity-60 text-white w-4/5 mx-auto border-2 rounded-xl border-indigo-500 mb-10
+    @apply bg-pink-900 bg-opacity-60 text-white w-4/5 mx-auto border-2 rounded-xl border-pink-500 mb-10
   }
 }
