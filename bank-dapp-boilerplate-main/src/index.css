@@ -8,10 +8,10 @@
   }
 
   .headline {
-    @apply text-xl p-2 text-center sm:text-left text-4xl sm:py-5 border-b-2 border-slate-800 sm:px-10  bg-pink-900 font-bold text-pink-400
+    @apply text-xl p-2 text-center sm:text-left text-4xl sm:py-5 border-b-2 border-slate-800 sm:px-10  bg-pink-900 font-bold text-pink-200
   }
   .headline-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-tr from-pink-500 to-pink-900
+    @apply bg-clip-text text-transparent bg-gradient-to-tr from-pink-300 to-pink-500
   }
 
   .form-style {
@@ -31,7 +31,7 @@
   }
 
   .btn-connect{
-    @apply bg-pink-500 px-5 py-3 mt-5 rounded-lg text-slate-100 font-bold
+    @apply bg-pink-300 px-5 py-3 mt-5 rounded-lg text-slate-100 font-bold
   }
 
   .bank-owner-section{
