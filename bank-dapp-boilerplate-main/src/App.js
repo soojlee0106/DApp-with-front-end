@@ -185,7 +185,7 @@ function App() {
 
   return (
     <main className="main-container">
-      <h2 className="headline"><span className="headline-gradient">Bank Contract Project</span> 💰</h2>
+      <h2 className="headline"><span className="headline-gradient">수정 은행</span> 💰</h2>
       <section className="customer-section px-10 pt-5 pb-10">
         {error && <p className="text-2xl text-red-700">{error}</p>}
         <div className="mt-5">
@@ -206,7 +206,7 @@ function App() {
             />
             <button
               className="btn-purple"
-              onClick={deposityMoneyHandler}>Deposit Money In ETH</button>
+              onClick={deposityMoneyHandler}>ETH로 입금하기</button>
           </form>
         </div>
         <div className="mt-10 mb-10">
@@ -222,18 +222,18 @@ function App() {
             <button
               className="btn-purple"
               onClick={withDrawMoneyHandler}>
-              Withdraw Money In ETH
+              ETH로 출금하기
             </button>
           </form>
         </div>
         <div className="mt-5">
-          <p><span className="font-bold">Customer Balance: </span>{customerTotalBalance}</p>
+          <p><span className="font-bold">고객 잔액: </span>{customerTotalBalance}</p>
         </div>
         <div className="mt-5">
-          <p><span className="font-bold">Bank Owner Address: </span>{bankOwnerAddress}</p>
+          <p><span className="font-bold">은행주 계좌 주소: </span>{bankOwnerAddress}</p>
         </div>
         <div className="mt-5">
-          {isWalletConnected && <p><span className="font-bold">Your Wallet Address: </span>{customerAddress}</p>}
+          {isWalletConnected && <p><span className="font-bold">당신의 지갑 주소: </span>{customerAddress}</p>}
           <button className="btn-connect" onClick={checkIfWalletIsConnected}>
             {isWalletConnected ? "Wallet Connected 🔒" : "Connect Wallet 🔑"}
           </button>
